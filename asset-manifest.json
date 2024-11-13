@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/medical-staff-tracking/static/js/main.342e1253.js",
+    "main.js": "/medical-staff-tracking/static/js/main.daab46db.js",
     "index.html": "/medical-staff-tracking/index.html",
-    "main.342e1253.js.map": "/medical-staff-tracking/static/js/main.342e1253.js.map"
+    "main.daab46db.js.map": "/medical-staff-tracking/static/js/main.daab46db.js.map"
   },
   "entrypoints": [
-    "static/js/main.342e1253.js"
+    "static/js/main.daab46db.js"
   ]
 }
