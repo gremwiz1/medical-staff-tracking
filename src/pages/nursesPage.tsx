@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Table, Button, Space, Card, Modal, Input } from "antd";
-import { RootState } from "../app/store";
+import { RootState } from "../store/store";
 import { deleteNurse } from "../slices/nursesSlice";
 import NurseModal from "../components/nurseModal";
 
