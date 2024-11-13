@@ -7,7 +7,7 @@ import NursesPage from "./pages/nursesPage";
 const { Header, Content } = Layout;
 
 const App: React.FC = () => (
-  <Router>
+  <Router basename="/medical-staff-tracking">
     <Layout>
       <Header>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
