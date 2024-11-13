@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Layout, Menu } from "antd";
+import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import DoctorsPage from "./pages/doctorsPage";
+import NursesPage from "./pages/nursesPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const { Header, Content } = Layout;
+
+const App: React.FC = () => (
+  <Router>
+    <Layout>
+      <Header>
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
+          <Menu.Item key="1">
+            <Link to="/doctors">Врачи</Link>
+          </Menu.Item>
+          <Menu.Item key="2">
+            <Link to="/nurses">Медсестры</Link>
+          </Menu.Item>
+        </Menu>
+      </Header>
+      <Content style={{ padding: "0 50px", marginTop: 64 }}>
+        <Routes>
+          <Route path="/doctors" element={<DoctorsPage />} />
+          <Route path="/nurses" element={<NursesPage />} />
+        </Routes>
+      </Content>
+    </Layout>
+  </Router>
+);
 
 export default App;
